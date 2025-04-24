@@ -1,0 +1,108 @@
+/* App.css */
+
+/* כלליים */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.game-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.game-info {
+  margin-bottom: 20px;
+}
+
+.turn {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.new-game-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-game-button:hover {
+  background-color: #0056b3;
+}
+
+/* רשת כרטיסים */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* כרטיסים */
+.card {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .flipped .front {
+  display: block;
+}
+
+.card .flipped .back {
+  display: none;
+}
+
+.card .back {
+  display: block;
+}
+
+.card .front {
+  display: none;
+}
+
+/* עיצוב כרטיסים במהלך ההפעלה */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
